@@ -1,0 +1,20 @@
+#include "pid.h"
+
+PID::PID()
+{
+    e=0;
+    last_e=0;
+    
+    
+}
+
+
+void PID::Compute (double pv){
+    
+    e=SP-pv;
+    P=kp*e;
+    I=(kp/Ti)*e_sum;
+    D=kp*Td*(e-)
+
+
+}
